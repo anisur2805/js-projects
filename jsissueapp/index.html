@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Issue App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet""> -->
+
+</head>
+<body onload="fetchIssues()">
+    
+    <div class="container">
+        <h1 class="display-3">JS Issue Tracker <small style="font-size: 35px;">by Anisur Rahman</small></h1>
+        <div class="jumbotron py-4">
+            <h3>Add new issue: </h3>
+            <form id="issueInputForm">
+                <div class="form-group">
+                    <label for="issueDesInput">Description</label>
+                    <input type="text" class="form-control" id="issueDesInput" placeholder="Describe issue...">
+                </div>
+                <div class="form-group">
+                    <label for="issueSevrtityInput">Severity</label>
+                    <select name="" id="issueSevrtityInput" class="form-control">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issueAssignInput">Assign to</label>
+                    <input type="text" class="form-control" id="issueAssignInput" placeholder="Assign to...">
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form> <!-- Form End -->
+        </div> <!-- Jumbotron End -->
+        <div class="col-md-12">
+            <div id="issuesList"></div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://chancejs.com/chance.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

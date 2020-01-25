@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper {display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+	max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	background: #f4f5f8;
+	    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+#wc-form input {
+	padding: 10px;
+	width: calc(100% - 20px);
+}
+.item {
+	font-size: 16px;
+	line-height: 22px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: 100%;
+	margin: 4px 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.column.item {
+    padding: 10px;
+    box-sizing: border-box;
+}

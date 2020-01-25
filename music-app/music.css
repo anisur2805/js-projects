@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    text-align: center;
+}
+.pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+.pads > div {
+    width: 100px;
+    height: 100px;
+    flex: 1;
+}
+.pad1 {
+    background: #1444d6;
+}
+.pad2 {
+    background: #4e69bb;
+}
+.pad3 {
+    background: #35a509;
+}
+.pad4 {
+    background: #a00a98;
+}
+.pad5 {
+    background: #eb1b00;
+}
+.pad6 {
+    background: #7f88a5;
+}
+
+@keyframes jump{
+    0%{
+        left: 20%;
+        bottom: 0%;
+    }
+
+    50%{
+        left: 50%;
+        bottom: 50%;
+    }
+
+    80%{
+        left: 80%;
+        bottom: 0%;
+    }
+}
+.visual > div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    z-index: -5;
+}
