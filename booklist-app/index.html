@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book List App | JS Mini Project</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-8 offset-2">
+        <h1>Book List App</h1>
+        <form action="" id="book-form">
+          <div class="form-group">
+            <label for="">Book Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              class="form-control"
+              placeholder="Book Title"
+              aria-describedby="helpId"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="">Author</label>
+            <input
+              type="text"
+              name="author"
+              id="author"
+              class="form-control"
+              placeholder="Book Author"
+              aria-describedby="helpId"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="">ISBN</label>
+            <input
+              type="text"
+              name="isbn"
+              id="isbn"
+              class="form-control"
+              placeholder="ISBN"
+              aria-describedby="helpId"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="addBook">
+            Add Book
+          </button>
+        </form>
+
+        <table class="table table-stripe mt-4">
+          <thead>
+            <tr>
+              <td>Title</td>
+              <td>Author</td>
+              <td>ISBN</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
