@@ -24,6 +24,3 @@ function saveBookmark(event) {
   }
   localStorage.setItem("Test", "Hello World!");
 }
-
-
-https://youtu.be/DIVfDZZeGxM?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&t=1483
