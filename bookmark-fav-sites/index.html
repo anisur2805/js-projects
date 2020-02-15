@@ -11,10 +11,10 @@
     />
     <link rel="stylesheet" href="app.css" />
   </head>
-  <body>
+  <body onload="fetchBookmarks();">
     <div class="container mt-4">
       <div class="row">
-        <div class="col-md-8 offset-2">
+        <div class="col-md-8 offset-md-3">
           <div class="jumbotron">
             <h3>Add your favorite bookmarks</h3>
             <form id="myForm">
@@ -46,6 +46,8 @@
               />
             </form>
           </div>
+
+          <div id="bookmarksResults"></div>
         </div>
       </div>
     </div>
